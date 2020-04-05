@@ -1,0 +1,493 @@
+<!DOCTYPE html><html class="menu">
+<html>
+
+<head>
+
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="google" value="notranslate"/>
+<!-- <link rel="stylesheet" type="text/css" href="/home/student/Desktop/meet stuff/meet folder/final_css_pro/web/css/button.css">
+<link rel="stylesheet" type="text/css" href="/home/student/Desktop/meet stuff/meet folder/final_css_pro/web/css/ver.css">
+<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+ -->
+<!-- <style type="text/css">
+  .ml4 {
+  position: relative;
+  font-weight: 900;
+  font-size: 4.5em;
+}
+.ml4 .letters {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0.3em;
+  right: 0;
+  opacity: 0; 
+}
+</style> -->
+
+
+<style type="text/css">
+  
+body{
+  font-family: "Times New Roman", Times, serif;
+}
+
+  .wrapper{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.link_wrapper{
+  position: relative;
+
+}
+
+.align_cen{
+  text-align: center;
+  align-items: center;
+
+}
+
+
+}
+
+.nn{
+  text-decoration: none;
+}
+
+
+
+
+.moin {
+;
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 15px;
+}
+
+
+
+
+
+.a{
+  display: block;
+  width: 230px;
+  height: 42px;
+  line-height: 45px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #232323;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid #00004d;
+  transition: all .35s;
+  font-size: 11px;
+
+}
+
+
+.a:hover{
+  width: 229px;
+  border: 3px solid #00B6B3;
+  background: white;
+  color: #000;
+  font-size: 12px;
+  top: 50%;
+  line-height: 46px;
+}
+
+
+.container {
+  position: relative;
+  width: 200px;
+}
+
+.image {
+  display: block;
+  width: 200px;
+  top: 200px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #232323;
+  overflow: hidden;
+
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+</style>
+
+
+
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="google" value="notranslate"/>
+
+<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<!-- 
+<link rel="stylesheet" type="text/css" href="/home/student/Desktop/meet stuff/meet folder/final_css_pro/web/css/ver.css"> -->
+<link rel="stylesheet" type="text/css" href="/home/student/Desktop/meet stuff/meet folder/final_css_pro/web/static/css/ver.css">
+
+
+
+<link rel="stylesheet" href="{{url_for('static', filename='css/v.css')}}" />
+
+<!-- <link rel="stylesheet" href="{{url_for('static', filename='css/shine.css')}}" />
+
+<link rel="stylesheet" href="{{url_for('static', filename='css/search.css')}}" />
+
+<link rel="stylesheet" href="{{url_for('static', filename='css/ed.css')}}" />
+<link rel="stylesheet" href="{{url_for('static', filename='css/rate.css')}}" />
+  -->
+<link rel="stylesheet" href="{{url_for('static', filename='css/ord.css')}}" />
+ 
+
+
+</head>
+<body>
+
+<div align="center" style="top: 0">
+<h1 class="ml4">
+  <span class="letters letters-1">Order🍱</span>
+  <span class="letters letters-2">Today🚍</span>
+  <span class="letters letters-3">NOW!</span>
+</h1>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<script type="text/javascript">
+var ml4 = {};
+ml4.opacityIn = [0,1];
+ml4.scaleIn = [0.2, 1];
+ml4.scaleOut = 3;
+ml4.durationIn = 800;
+ml4.durationOut = 600;
+ml4.delay = 500;
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml4 .letters-1',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-1',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4 .letters-2',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-2',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4 .letters-3',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-3',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4',
+    opacity: 0,
+    duration: 500,
+    delay: 500
+  });
+</script>
+<div align="center">
+<br>
+
+</h1>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<br>
+
+</div>
+<div class="row">
+<div class="col-1">
+<nav class="main-menu" style="position: fixed; background-color: white">
+
+
+  
+
+<div class="settings">
+<div class="scrollbar" id="style-1">
+      
+<ul>
+  
+<li>                                   
+<a href="main.html">
+<i class="fa fa-home fa-lg"></i>
+<span class="nav-text" >Home</span>
+</a>
+</li>   
+   
+<li>                                 
+<a href="log.html">
+<i class="fa fa-user fa-lg"></i>
+<span class="nav-text">Login</span>
+</a>
+</li>   
+
+    
+<li>        
+                        <!-- this part is for lara cause she said so i have nothing to do here -->
+<a href="https://meet.mit.edu/"> 
+<i class="fa fa-envelope-o fa-lg"></i>
+<span class="nav-text">Contact</span>
+</a>
+</li>   
+  
+
+<li>
+<a href="https://meet.mit.edu/">
+<i class="fa fa-clock-o fa-lg"></i>
+<span class="nav-text">News</span>
+</a>
+</li>
+  
+<li>
+<a href="https://meet.mit.edu/">
+<i class="fa fa-desktop fa-lg"></i>
+<span class="nav-text">Technology</span>
+</a>
+</li>
+
+
+
+<li>
+<a href="https://meet.mit.edu/">
+<i class="fa fa-picture-o fa-lg"></i>
+<span class="nav-text">Art & Design</span>
+</a>
+</li>
+
+<li>
+<a href="https://meet.mit.edu/">
+<i class="fa fa-align-left fa-lg"></i>
+<span class="nav-text">Magazines
+</span>
+</a>
+</li>
+  
+<li>
+<a href="https://meet.mit.edu/">
+<i class="fa fa-gamepad fa-lg"></i>
+<span class="nav-text">Games</span>
+</a>
+</li>
+  
+
+  
+</ul>
+
+  
+<li>
+                                   
+<a href="https://meet.mit.edu/">
+<i class="fa fa-question-circle fa-lg"></i>
+<span class="nav-text">Help</span>
+</a>
+</li>   
+    
+  
+<ul class="logout">
+<li>
+                   <a href="https://meet.mit.edu/">
+                         <i class="fa fa-lightbulb-o fa-lg"></i>
+                        <span class="nav-text">
+                            BLOG 
+                        </span>
+                        
+                    </a>
+</li>  
+</ul>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </nav>
+<b style="position: ">
+</div>
+       
+        </div>
+     <!-- 
+
+       <b class="z2" class="box">asdasd</b>
+  <b class="z3">asdasd</b>
+  <b class="z4">asdasd</b> -->
+
+
+
+     </div>
+</div>
+<div class="row">
+
+  <br><br>
+  <br>
+  <br>
+  <br>
+
+
+
+
+
+<div align="center">
+<p class="par">
+<b><u>Place</u></b>
+<br>
+<br>
+<b>name</b>
+<br>
+<br><br>
+<br>
+
+
+<b>description</b> 
+<!-- <center><img align="center"  style="right: " src="https://i.gyazo.com/bac1dd6603063807b06daee90fb95e7d.png" width="200">
+</center> -->
+<div style="bottom: 80px">
+  <button onclick="list()" class="a" class="wrapper" class="a" class="wrapper" class="icon"   class="path" class="svg" class="link_wrapper"  class="b" class="icon svg" style="text-align: center; bottom: 50px;" 
+class="path">Click here to see more</button>
+  </div>
+<div class="container" style="right: 300px; bottom: 250px">
+  <img src="https://i.gyazo.com/bac1dd6603063807b06daee90fb95e7d.png" alt="Avatar" class="image" width="300">
+  <div class="overlay">
+    <div class="text">054-5441-297</div>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+{%if items%}
+  {%for item in items%}
+
+     <div align="center">
+<p class="par">
+<b><u>{{item.place}}</u></b>
+<br>
+<br>
+<b>{{item.name_of_item}}</b>
+<br>
+<br><br>
+<br>
+
+
+<b>{{item.description}}</b> 
+<!-- <center><img align="center"  style="right: " src="https://i.gyazo.com/bac1dd6603063807b06daee90fb95e7d.png" width="200">
+</center> -->
+<div style="bottom: 80px">
+  <button onclick="list()" class="a" class="wrapper" class="a" class="wrapper" class="icon"   class="path" class="svg" class="link_wrapper"  class="b" class="icon svg" style="text-align: center; bottom: 50px; line-height: 8px" 
+class="path">Click here to see more</button>
+  </div>
+<div class="container" style="right: 300px; bottom: 250px">
+  <img src="{{item.imglink}}" alt="Avatar" class="image" width="200">
+  <div class="overlay">
+    <div class="text">{{item.price_d}}</div>
+  </div>
+</div>
+
+</div>
+</div>
+      <div class="z3">
+                       </p>
+                        {% endfor %}
+                      {% else %}
+                        <h1 align="center">Database currently empty.</h1>
+                        {% endif%}
+
+</div>
+<br>
+<br>
+</div>
+
+</div>
+</center>
+
+
+  <script type="text/javascript">
+  	function home(){
+
+window.open("/home/student/Desktop/meet stuff/meet folder/final_css_pro/web/templates/main.html");
+
+}
+ 
+
+
+
+
+
+
+function login(){
+
+location.replace("/home/student/Desktop/meet stuff/meet folder/final_css_pro/web/templates/login/log.html");
+
+}
+
+
+
+
+function test3(){
+	console.log("clicking");
+}
+
+
+
+function list(){
+  location.replace('list.html')
+}
+
+  </script>
+  
+</body>
+</html>

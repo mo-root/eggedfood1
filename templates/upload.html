@@ -1,0 +1,174 @@
+<DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="/css/button.css">
+	<link rel="stylesheet" type="text/css" href="css/search.css">
+  <link rel="stylesheet" type="text/css" href="css/shine.css">
+	<link rel="stylesheet" type="text/css" href="/css/log.css">
+  <link rel="stylesheet" type="text/css" href="css/ed.css">
+
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="google" value="notranslate"/>
+
+<link rel="stylesheet" type="text/css" href="ver.css">
+<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+</head>
+
+
+<!-- #00B6B3 -->
+<body style="background: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg');">
+   <video id="my" autoplay="autoplay">
+	<source src="mus.mp3" type="audio/mpeg">
+</video><div>
+<p align="right" onclick="music()">music?</p>
+   </div>
+            <form action="{{url_for('upload')}}" method="POST">
+
+  <header>
+   <h1 align="center">upload</h1>
+  
+  </header>
+  
+  <div>
+    <label style="color: white;">Name:</label>
+    </div>
+      <input id="name" name="name" type="text"  size="8" tabindex="1">
+    </div>
+  </div>
+
+    <div>
+    <label style="color: white;">Place:</label>
+    </div>
+      <input id="place" name="place" type="text"  size="8" tabindex="1">
+    </div>
+  </div>
+
+
+
+  <div>
+    
+<label style="color: white" >Enter a phone number:</label><br><br>
+  <input type="tel" id="price" name="price" placeholder="05x-xxx-xxxx" maxlength="12"><br><br>
+
+
+
+
+    <!-- <label style="color: white;" class="desc" id="price" for="Field3">
+      phone_number
+    </label>
+    <div>
+      <input id="price" name="price" type="number"  value="" tabindex="3" maxlength="9">  -->
+   </div>
+
+    
+  <div>
+    <label style="color: white;" class="desc" id="title4" for="Field4">
+      description
+    </label>
+  
+    <div>
+      <textarea id="description" name="description" spellcheck="true" maxlength="56" rows="10" cols="50" tabindex="4"></textarea>
+    </div>
+  </div>
+    
+
+<br>
+
+  <div>
+    <label style="color: white;" class="desc" id="title3" for="Field3">
+      link
+    </label>
+    <div>
+      <input id="imgLs" name="imgLs" type="text"  value="" maxlength="255" tabindex="3"> 
+   </div>
+  </div>
+<br>
+<b>
+<div>
+
+<input type="file" name="img" id="img">
+</div>
+
+<br>
+<br>
+<div style="color: white;">
+accesories:
+<input type="checkbox" name="acc" id="acc">
+<br>
+coordinaters:
+<input type="checkbox" name="coor" id="coor">
+<br>
+
+electronics:<input type="checkbox" name="elc" id="elc">
+<br>
+food:<input type="checkbox" name="food" id="food">
+<br>
+</div>
+
+
+<div>
+    <label style="color: white;">Name:</label>
+    </div>
+      <input id="catt" name="catt" type="text"  size="8" tabindex="1">
+    </div>
+  </div>
+
+
+
+  <div>
+    <div>
+      <input id="saveForm" name="saveForm" type="submit" value="Submit">
+    </div>
+  </div>
+
+
+
+
+</form>
+
+
+
+<script type="text/javascript">
+	function music(){
+		document.getElementById("my").load();
+	}
+</script>
+<br>
+<br>
+<br>
+  <div>
+    <label style="color: white;" class="desc" id="title4" for="Field4">
+      full_des
+    </label>
+  
+    <div>
+      <textarea id="view" name="view" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
+    </div>
+  </div>
+<br>
+<div>
+    <label style="color: white;">experience:</label>
+    </div>
+      <input id="exp" name="exp" type="text"  size="8" tabindex="1">
+    </div>
+  </div>
+
+</body>
+</html>
